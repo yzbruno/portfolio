@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @brunoyzx
+- 👋 Hi, I’m @yzbruno
 - 👀 I’m interested in metaverse, user interface, mixed reality
 - 🌱 I’m currently learning cinema 4D
 - 💞️ I’m looking to collaborate on metaverse apps
