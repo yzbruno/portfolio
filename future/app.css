@@ -1,0 +1,152 @@
+/* .....................................
+
+defaults
+
+..................................... */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900');
+body{
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+hr{ border-bottom: 1px dotted #ccc !important; }
+
+.swal-button{ background-color: var(--color5) !important; border: 0 !important; }
+.align{
+  padding: 40px;
+}
+
+/* .....................................
+
+default colors
+
+..................................... */
+
+:root {
+  --color1: #00ffcc;
+  --color2: #222222;
+  --color3: #aaaaaa;
+  --color4: #575267;
+  --color5: #cccccc;
+}
+
+/* .....................................
+
+design
+
+..................................... */
+::selection {      background: var(--color1); }
+::-moz-selection { background: var(--color1); }
+
+body{
+  background-color: white;
+}
+.color1{ color: var(--color1) !important; }
+.color2{ color: var(--color2) !important; }
+.color3{ color: var(--color3) !important; }
+.color4{ color: var(--color4) !important; }
+.color5{ color: var(--color5) !important; }
+.color6{ color: var(--color6) !important; }
+.white{ color: aliceblue !important; }
+.black{ color: black !important; }
+
+.bg1{ background-color: var(--color1) !important; }
+.bg2{ background-color: var(--color2) !important; }
+.bg3{ background-color: var(--color3) !important; }
+.bg4{ background-color: var(--color4) !important; }
+.bg5{ background-color: var(--color5) !important; }
+.bg6{ background-color: var(--color6) !important; }
+.white{ color: aliceblue !important; }
+.black{ color: black !important; }
+
+.light{ background-color: #ccc !important; padding: 20px; color: black; }
+a{
+  color: var(--color2);
+  transition: color .5s ease-out;
+  -moz-transition: color .5s ease-out;
+  -webkit-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
+}
+a:hover{ color: var(--color1); }
+.modern-link{
+  padding: 4px;
+  background-color: #999;
+  color: var(--color1);
+  transition: color .5s ease-out;
+  -moz-transition: color .5s ease-out;
+  -webkit-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
+}
+.modern-link:hover{
+  color: var(--color2);
+}
+.underline{ text-decoration: underline !important; }
+.text-up{ text-transform: uppercase !important; }
+.space50{ height: 50px; }
+.space100{ height: 100px; }
+.space200{ height: 200px; }
+/* .....................................
+
+custom
+
+..................................... */
+.load{
+  width: 100%;
+  height: 120vh;
+  text-align: center;
+  z-index: 99;
+  position: fixed;
+  background-color: #201f20;
+}
+.yo{ border-top-right-radius: 100px; }
+
+.div-motionblue{
+  width: 2px;
+  height: 120vh;
+  background-color: var(--color1);
+  z-index: 97;
+  position: fixed;
+}
+.div-motiongray{
+  width: 2px;
+  height: 120vh;
+  background-color: #201f20;
+  z-index: 98;
+  position: fixed;
+}
+.nav-future{ padding: 60px; }
+small{
+  font-size: 12px;
+  font-weight: bolder !important;
+  color: var(--color2);
+}
+hr{
+  border-bottom: 1px solid var(--color4) !important;
+  background: transparent;
+}
+.fine{ font-weight: 200; }
+.about{
+  padding: 100px;
+  font-size: 16px !important;
+  color: black !important;
+  line-height: 2;
+  font-weight: 400 !important;
+  color: black !important;
+  text-align: justify;
+}
+.portfolio-content{
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.back-home{
+  width: 100%;
+  position: fixed;
+  text-align: left;
+  padding: 40px;
+  z-index: 95;
+}
+.contato{
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
