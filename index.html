@@ -17,9 +17,41 @@
         <meta name="revisit-after" content="1 days">
         <meta name="author" content="Bruno Trocoli">
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
         <!-- css libraries -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="app/bulma.min.css">
         <style>
+            /* .....................................
+
+            default colors
+
+            ..................................... */
+
+            :root {
+                --color1: red;
+                --color2: #222222;
+                --color3: #aaaaaa;
+                --color4: #575267;
+                --color5: #cccccc;
+            }
+
+            /* .....................................
+
+            design
+
+            ..................................... */
+
+            ::selection {      background: var(--color1); }
+            ::-moz-selection { background: var(--color1); }
+
+            a{
+                color: var(--color1) !important;
+            }
+
+            .red{ color: var(--color1) !important; }
+
             .fine{
                 font-weight: 200 !important;
                 letter-spacing: 20px;
@@ -28,31 +60,207 @@
                 font-size: 12px;
                 text-transform: uppercase;
                 letter-spacing: 2px;
+                color: black;
+            }
+            .div-motionblue{
+                width: 2px;
+                height: 120vh;
+                background-color: var(--color1);
+                z-index: 97;
+                position: fixed;
+            }
+            .div-motiongray{
+                width: 2px;
+                height: 120vh;
+                background-color: #201f20;
+                z-index: 98;
+                position: fixed;
+                text-align: center;
+            }
+            .div-motiongray img{
+                margin-top: 5%;
+                display: none;
+            }
+            .div-close{
+                padding-right: 90px;
+                padding-top: 30px;
+                text-align: right !important;
+                display: none;
+            }
+            .div-close a{
+                font-size: 60px;
+                color: aliceblue;
+                position: fixed;
+            }
+            #footer{
+                width: 100%;
+                opacity: .2;
             }
         </style>
 
         <!-- favicon -->
-        <link rel="icon" href="">
+        <link rel="icon" href="images/favicon.png">
 
         <!-- scripts -->
 
     </head>
 
     <body>
-        <section class="section"><h1 class="title is-1 fine">SELECTED WORKS</h1></section>
+        <div class="div-motionblue"></div>
+        <div class="div-motiongray">
+            <div class="div-close"><a onclick="closeX();">&times;</a></div>
+            <img src="images/load.gif">
+        </div>
 
+        <!-- release -->
         <section class="section">
             <div class="columns">
                 <div class="column">
-                    <div class="portfolio-title">GOL Linhas Áereas</div>
+                    ae
                 </div>
-                <div class="column">
-                    <div class="portfolio-title">Virtual Space</div>
-                </div>
-                <div class="column">
-                    <div class="portfolio-title">GOL Linhas Áereas</div>
+
+                <div class="column is-3">
+                    <img src="images/yo.jpg">
                 </div>
             </div>
         </section>
+
+        <!-- AI -->
+        <section class="section hero is-light is-bold"><h1 class="title is-1 fine red">AI</h1></section>
+        <section class="section">
+            <div class="columns">
+                <div class="column is-7">
+                    <a onclick="openCase01();">
+                        <img src="images/any.jpeg">
+                        <p>&nbsp;</p>
+                    </a>
+                    <div class="portfolio-title">GOL Linhas Áereas</div>
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- UI -->
+        <section class="section hero is-light is-bold"><h1 class="title is-1 fine red">UI</h1></section>
+        <section class="section">
+            <div class="columns">
+                <div class="column">
+                    <a onclick="openCase01();">
+                        <img src="images/any.jpeg">
+                        <p>&nbsp;</p>
+                    </a>
+                    <div class="portfolio-title">GOL Linhas Áereas</div>
+                </div>
+                <div class="column">
+                    <a>
+                        <img src="images/any.jpeg">
+                        <p>&nbsp;</p>
+                    </a>
+                    <div class="portfolio-title">Virtual Space</div>
+                </div>
+                <div class="column">
+                    <a>
+                        <img src="images/any.jpeg">
+                        <p>&nbsp;</p>
+                    </a>
+                    <div class="portfolio-title">Trackin</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UX -->
+        <section class="section hero is-light is-bold"><h1 class="title is-1 fine red">UX</h1></section>
+        <section class="section">
+            <div class="columns">
+                <div class="column">
+                    <a onclick="openCase01();">
+                        <img src="images/any.jpeg">
+                        <p>&nbsp;</p>
+                    </a>
+                    <div class="portfolio-title">GOL Linhas Áereas</div>
+                </div>
+                <div class="column">
+                    <a>
+                        <img src="images/any.jpeg">
+                        <p>&nbsp;</p>
+                    </a>
+                    <div class="portfolio-title">Virtual Space</div>
+                </div>
+                <div class="column">
+                    <a>
+                        <img src="images/any.jpeg">
+                        <p>&nbsp;</p>
+                    </a>
+                    <div class="portfolio-title">Trackin</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="section has-text-centered">
+            CONTACTS<br>
+            +55 11 993 194 165<br>
+            brunotrocoli@live.com<br>
+            <a href="https://www.linkedin.com/in/yzbruno/" target="_blank">https://www.linkedin.com/in/yzbruno/</a>
+            <p>&nbsp;</p>
+        </section>
+        <img src="images/footer.gif" id="footer">
+
+
+        <!-- scripts -->
+        <script type="text/javascript">
+            var delayRedirect = 300;
+            function openCase01(){
+                $('.div-motionblue').animate({
+                    width: '100%'
+                }, {
+                    easing: 'easeOutSine',
+                    duration: 300,
+                });
+
+                setTimeout(function() {
+                    $('.div-motiongray img').fadeIn();
+                    $('.div-motiongray').animate({
+                        width: '100%'
+                    }, {
+                        easing: 'easeOutSine',
+                        duration: 300,
+                    });
+                    $('.div-motiongray').animate({
+                        width: '100%'
+                    }, {
+                        easing: 'easeOutSine',
+                        duration: 500,
+                        complete: function(){
+                            $('.div-motiongray img').delay(2000).fadeOut();
+                            $('.div-close').fadeIn();
+                        }
+                    });
+                }, delayRedirect);
+            }
+            function closeX(){
+                $('.div-close').hide();
+                $('.div-motiongray').animate({
+                    width: '2px'
+                }, {
+                    easing: 'easeOutSine',
+                    duration: 300,
+                });
+
+                setTimeout(function() {
+                    $('.div-motionblue').animate({
+                        width: '1px'
+                    }, {
+                        easing: 'easeOutSine',
+                        duration: 500,
+                        complete: function(){
+                            $('.div-motiongray img').fadeIn();
+                        }
+                    });
+                }, delayRedirect);
+            }
+        </script>
     </body>
 </html>
