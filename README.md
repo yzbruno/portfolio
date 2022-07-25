@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @yzbruno
 - 👀 I’m interested in metaverse, user interface, mixed reality
-- 🌱 I’m currently learning Blender3d
+- 🌱 I’m currently learning Blender 3D
 - 💞️ I’m looking to collaborate on metaverse apps
 - 📫 How to reach me: +55 11 99319 4165
 
